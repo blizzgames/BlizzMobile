@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLIZZ MOBILE - Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">BLIZZ</span>
+            <span class="logo-blue">MOBILE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="features.html">Возможности</a></li>
+            <li><a href="gallery.html" class="active">Галерея</a></li>
+            <li><a href="team.html">Руководство</a></li>
+        </ul>
+        <button class="play-btn" onclick="alert('Загрузка начнется в ближайшее время!')">▶ Играть</button>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header gallery-header">
+        <h1>Галерея скриншотов</h1>
+        <p>Погрузись в мир BLIZZ MOBILE через наши лучшие кадры</p>
+    </section>
+
+    <!-- Фильтры категорий -->
+    <section class="gallery-filters">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="city">Город</button>
+            <button class="filter-btn" data-filter="cars">Транспорт</button>
+            <button class="filter-btn" data-filter="houses">Недвижимость</button>
+            <button class="filter-btn" data-filter="events">События</button>
+            <button class="filter-btn" data-filter="night">Ночь</button>
+        </div>
+    </section>
+
+    <!-- Большая галерея -->
+    <section class="gallery-main">
+        <div class="gallery-masonry">
+            <!-- Город -->
+            <div class="gallery-card" data-category="city">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder large">🏙️</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Центр города</h3>
+                    <p>Главная площадь BLIZZ City</p>
+                    <span class="gallery-category">Город</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="city">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🌆</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Небоскребы</h3>
+                    <p>Деловой район города</p>
+                    <span class="gallery-category">Город</span>
+                </div>
+            </div>
+
+            <!-- Транспорт -->
+            <div class="gallery-card" data-category="cars">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🚗</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Спорткары</h3>
+                    <p>Уличные гонки на суперкарах</p>
+                    <span class="gallery-category">Транспорт</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="cars">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🏍️</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Мотоциклы</h3>
+                    <p>Байкерская культура</p>
+                    <span class="gallery-category">Транспорт</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="cars">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder large">🚁</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Вертолеты</h3>
+                    <p>Воздушный транспорт VIP класса</p>
+                    <span class="gallery-category">Транспорт</span>
+                </div>
+            </div>
+
+            <!-- Недвижимость -->
+            <div class="gallery-card" data-category="houses">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🏠</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Элитные дома</h3>
+                    <p>Роскошная недвижимость</p>
+                    <span class="gallery-category">Недвижимость</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="houses">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🏢</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Пентхаусы</h3>
+                    <p>Квартиры на последних этажах</p>
+                    <span class="gallery-category">Недвижимость</span>
+                </div>
+            </div>
+
+            <!-- События -->
+            <div class="gallery-card" data-category="events">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder large">🎭</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Мафиозные разборки</h3>
+                    <p>Ролевые события</p>
+                    <span class="gallery-category">События</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="events">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🎉</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Вечеринки</h3>
+                    <p>Ночные клубы и развлечения</p>
+                    <span class="gallery-category">События</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="events">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🚔</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Полицейские погони</h3>
+                    <p>Работа правоохранительных органов</p>
+                    <span class="gallery-category">События</span>
+                </div>
+            </div>
+
+            <!-- Ночь -->
+            <div class="gallery-card" data-category="night">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder large">🌃</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Ночной город</h3>
+                    <p>Неоновые огни мегаполиса</p>
+                    <span class="gallery-category">Ночь</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="night">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🌉</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Мосты ночью</h3>
+                    <p>Подсветка архитектуры</p>
+                    <span class="gallery-category">Ночь</span>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-category="city">
+                <div class="gallery-image">
+                    <div class="gallery-placeholder">🏪</div>
+                </div>
+                <div class="gallery-info">
+                    <h3>Магазины</h3>
+                    <p>Торговые центры города</p>
+                    <span class="gallery-category">Город</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="gallery-stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-icon">📸</div>
+                <div class="stat-number">500+</div>
+                <div class="stat-text">Скриншотов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🎨</div>
+                <div class="stat-number">50+</div>
+                <div class="stat-text">Локаций</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👥</div>
+                <div class="stat-number">10K+</div>
+                <div class="stat-text">Игроков</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">BLIZZ</span>
+                    <span class="logo-blue">MOBILE</span>
+                </div>
+                <p class="footer-description">
+                    Первый мобильный RP сервер нового поколения. Создай свою историю в мире безграничных возможностей.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" title="VKontakte">🔵</a>
+                    <a href="#" class="social-btn" title="Telegram">✈️</a>
+                    <a href="#" class="social-btn" title="Discord">💬</a>
+                    <a href="#" class="social-btn" title="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="features.html">Возможности</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="team.html">Руководство</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Поддержка</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Правила сервера</a></li>
+                    <li><a href="#">Связаться с нами</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Юридическая информация</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                    <li><a href="#">Возврат средств</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 BLIZZ MOBILE. Все права защищены.</p>
+                <p class="footer-disclaimer">
+                    Все материалы на сайте являются собственностью проекта BLIZZ MOBILE. 
+                    Использование материалов без разрешения администрации запрещено.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
