@@ -316,32 +316,41 @@ nav {
     border-bottom: 1px solid rgba(255, 107, 0, 0.1);
 }
 
+/* Логотип в оранжевом стиле */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 800;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease;
 }
 
 .logo-icon {
     color: #ff6b00;
     font-size: 28px;
-    animation: pulse-icon 2s infinite;
+    /* Иконка горит ярче */
+    filter: drop-shadow(0 0 8px #ff6b00);
+    animation: flame-pulse 1.5s infinite alternate ease-in-out;
 }
 
-@keyframes pulse-icon {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+.logo-text, .logo-blue {
+    /* Теперь обе части оранжевые, но с разным оттенком */
+    background: linear-gradient(to right, #ffffff 0%, #ff6b00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    /* Оранжевое свечение текста */
+    filter: drop-shadow(0 0 10px rgba(255, 107, 0, 0.5));
 }
 
-.logo-text {
-    color: #ff6b00;
-}
-
-.logo-blue {
-    color: #00a8ff;
+/* Анимация пульсации огня */
+@keyframes flame-pulse {
+    0% { transform: scale(1); filter: brightness(1) drop-shadow(0 0 5px #ff6b00); }
+    100% { transform: scale(1.1); filter: brightness(1.5) drop-shadow(0 0 15px #ff8c00); }
 }
 
 .nav-links {
@@ -1837,3 +1846,4 @@ nav {
 .logo-blue {
     color: #ffd700; /* Был голубой #00a8ff */
 }
+
